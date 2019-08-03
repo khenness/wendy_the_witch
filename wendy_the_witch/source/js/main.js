@@ -245,16 +245,18 @@ var SceneB = new Phaser.Class({
         }
 
         
-        //music = this.add.audio('home_light');
+        music = this.sound.add('home_light');
 
-        //music.play();
+        music.play({
+            loop: true
+        });
 
 
 
         this.input.once('pointerdown', function (event) {
 
             console.log('From SceneB to SceneC');
-
+            music.stop()
             this.scene.start('sceneC');
 
         }, this);
@@ -281,6 +283,7 @@ var SceneC = new Phaser.Class({
     preload: function ()
     {
         this.load.image('mech', 'assets/pics/titan-mech.png');
+        this.load.audio('home_dark', ['assets/music/Home_dark_1.0.mp3'] ); // could put .ogg files here in this list for browser compatibility
     },
 
     create: function ()
@@ -293,9 +296,14 @@ var SceneC = new Phaser.Class({
             this.add.text(32, 32, 'Scene C - Wendy wakes up in the house and her cat is gone! She walks out the door', { fill: 'white' });
         }
 
+        music = this.sound.add('home_dark');
+        music.play({
+            loop: true
+        });
         this.input.once('pointerdown', function (event) {
 
             //console.log('From SceneC to SceneA');
+            music.stop()
             console.log('got to here');
             this.scene.start('sceneD');
 
@@ -320,6 +328,7 @@ var SceneD = new Phaser.Class({
     preload: function ()
     {
         this.load.image('mech', 'assets/pics/titan-mech.png');
+        this.load.audio('streets', ['assets/music/Streets1.1.mp3'] ); // could put .ogg files here in this list for browser compatibility
     },
 
     create: function ()
@@ -332,9 +341,14 @@ var SceneD = new Phaser.Class({
             this.add.text(32, 32, 'Scene D - Wendy wanders through the forest and dodges enemies', { fill: 'white' });
         }
 
+        music = this.sound.add('streets');
+        music.play({
+            loop: true
+        });
+
         this.input.once('pointerdown', function (event) {
 
-
+            music.stop()
             this.scene.start('sceneE');
 
         }, this);
@@ -362,6 +376,7 @@ var SceneE = new Phaser.Class({
     preload: function ()
     {
         this.load.image('mech', 'assets/pics/titan-mech.png');
+        this.load.audio('gribblewood', ['assets/music/TheGribblewood1.0.mp3'] ); // could put .ogg files here in this list for browser compatibility
     },
 
     create: function ()
@@ -373,9 +388,15 @@ var SceneE = new Phaser.Class({
 
             this.add.text(32, 32, 'Scene E - Wendy meets the Imp in the forest. He stole her cat!', { fill: 'white' });
         }
+        
+        music = this.sound.add('gribblewood');
+        music.play({
+            loop: true
+        });
+
 
         this.input.once('pointerdown', function (event) {
-
+            music.stop()
 
             this.scene.start('sceneF');
 
