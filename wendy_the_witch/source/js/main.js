@@ -1,3 +1,6 @@
+var DEBUG_MODE = true;
+
+
 var config = {
     type: Phaser.AUTO,
     width: 800,
@@ -34,7 +37,7 @@ function preload() {
     // simple coin image
     this.load.image('coin', 'assets/coinGold.png');
     // player animations
-    this.load.atlas('player', 'assets/player.png', 'assets/player.json');
+    this.load.atlas('player', 'assets/player_old.png', 'assets/player.json');
 }
 
 function create() {
@@ -105,7 +108,15 @@ function create() {
     });
     // fix the text to the camera
     text.setScrollFactor(0);
+
+
+
+
 }
+
+
+
+
 
 // this function will be called when the player touches a coin
 function collectCoin(sprite, tile) {
@@ -137,3 +148,426 @@ function update(time, delta) {
         player.body.setVelocityY(-500);        
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var SceneA = new Phaser.Class({
+
+    Extends: Phaser.Scene,
+
+    initialize:
+
+    function SceneA ()
+    {
+        Phaser.Scene.call(this, { key: 'sceneA' });
+    },
+
+    preload: function ()
+    {
+        this.load.image('face', 'assets/pics/bw-face.png');
+    },
+
+    create: function ()
+    {
+        this.add.sprite(400, 300, 'face').setAlpha(0.2);
+
+
+        if (DEBUG_MODE ==true) {
+
+            this.add.text(32, 32, 'This is the main menu screen. (Music + press any key to continue)', { fill: 'white' });
+        }
+
+
+
+        this.input.once('pointerdown', function () {
+
+            console.log('From SceneA to SceneB');
+
+            this.scene.start('sceneB');
+
+        }, this);
+    }
+
+});
+
+var SceneB = new Phaser.Class({
+
+    Extends: Phaser.Scene,
+
+    initialize:
+
+    function SceneB ()
+    {
+        Phaser.Scene.call(this, { key: 'sceneB' });
+    },
+
+    preload: function ()
+    {
+        this.load.image('arrow', 'assets/pics/titan-mech.png');
+    },
+
+    create: function ()
+    {
+        this.arrow = this.add.sprite(400, 300, 'arrow').setOrigin(0, 0.5);
+
+        
+        if (DEBUG_MODE ==true) {
+
+            this.add.text(32, 32, 'Wendy is in her house. She says goodnight to her pets and goes to sleep.', { fill: 'white' });
+        }
+
+        this.input.once('pointerdown', function (event) {
+
+            console.log('From SceneB to SceneC');
+
+            this.scene.start('sceneC');
+
+        }, this);
+    },
+
+    update: function (time, delta)
+    {
+        this.arrow.rotation += 0.01;
+    }
+
+});
+
+var SceneC = new Phaser.Class({
+
+    Extends: Phaser.Scene,
+
+    initialize:
+
+    function SceneC ()
+    {
+        Phaser.Scene.call(this, { key: 'sceneC' });
+    },
+
+    preload: function ()
+    {
+        this.load.image('mech', 'assets/pics/titan-mech.png');
+    },
+
+    create: function ()
+    {
+        this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
+        
+
+        if (DEBUG_MODE ==true) {
+
+            this.add.text(32, 32, 'Wendy wakes up in the house and her cat is gone! She walks out the door', { fill: 'white' });
+        }
+
+        this.input.once('pointerdown', function (event) {
+
+            //console.log('From SceneC to SceneA');
+            console.log('got to here');
+            this.scene.start('sceneD');
+
+        }, this);
+    }
+
+});
+
+
+
+var SceneD = new Phaser.Class({
+
+    Extends: Phaser.Scene,
+
+    initialize:
+
+    function SceneD ()
+    {
+        Phaser.Scene.call(this, { key: 'sceneD' });
+    },
+
+    preload: function ()
+    {
+        this.load.image('mech', 'assets/pics/titan-mech.png');
+    },
+
+    create: function ()
+    {
+        this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
+        
+
+        if (DEBUG_MODE ==true) {
+
+            this.add.text(32, 32, 'Wendy wanders through the forest and dodges enemies', { fill: 'white' });
+        }
+
+        this.input.once('pointerdown', function (event) {
+
+
+            this.scene.start('sceneE');
+
+        }, this);
+    }
+
+});
+
+
+
+
+
+
+
+var SceneE = new Phaser.Class({
+
+    Extends: Phaser.Scene,
+
+    initialize:
+
+    function SceneE ()
+    {
+        Phaser.Scene.call(this, { key: 'sceneE' });
+    },
+
+    preload: function ()
+    {
+        this.load.image('mech', 'assets/pics/titan-mech.png');
+    },
+
+    create: function ()
+    {
+        this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
+        
+
+        if (DEBUG_MODE ==true) {
+
+            this.add.text(32, 32, 'EEEEEEE', { fill: 'white' });
+        }
+
+        this.input.once('pointerdown', function (event) {
+
+
+            this.scene.start('sceneA');
+
+        }, this);
+    }
+
+});
+
+
+
+
+
+/*
+
+
+
+var SceneF = new Phaser.Class({
+
+    Extends: Phaser.Scene,
+
+    initialize:
+
+    function SceneF ()
+    {
+        Phaser.Scene.call(this, { key: 'sceneF' });
+    },
+
+    preload: function ()
+    {
+        this.load.image('mech', 'assets/pics/titan-mech.png');
+    },
+
+    create: function ()
+    {
+        this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
+        
+
+        if (DEBUG_MODE ==true) {
+
+            this.add.text(32, 32, 'F', { fill: 'white' });
+        }
+
+        this.input.once('pointerdown', function (event) {
+
+
+            this.scene.start('sceneG');
+
+        }, this);
+    }
+
+});
+
+
+
+
+
+
+var SceneG = new Phaser.Class({
+
+    Extends: Phaser.Scene,
+
+    initialize:
+
+    function SceneH ()
+    {
+        Phaser.Scene.call(this, { key: 'sceneG' });
+    },
+
+    preload: function ()
+    {
+        this.load.image('mech', 'assets/pics/titan-mech.png');
+    },
+
+    create: function ()
+    {
+        this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
+        
+
+        if (DEBUG_MODE ==true) {
+
+            this.add.text(32, 32, 'G', { fill: 'white' });
+        }
+
+        this.input.once('pointerdown', function (event) {
+
+
+            this.scene.start('sceneI');
+
+        }, this);
+    }
+
+});
+
+
+
+
+
+
+var SceneH = new Phaser.Class({
+
+    Extends: Phaser.Scene,
+
+    initialize:
+
+    function SceneH ()
+    {
+        Phaser.Scene.call(this, { key: 'sceneE' });
+    },
+
+    preload: function ()
+    {
+        this.load.image('mech', 'assets/pics/titan-mech.png');
+    },
+
+    create: function ()
+    {
+        this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
+        
+
+        if (DEBUG_MODE ==true) {
+
+            this.add.text(32, 32, 'H', { fill: 'white' });
+        }
+
+        this.input.once('pointerdown', function (event) {
+
+
+            this.scene.start('sceneI');
+
+        }, this);
+    }
+
+});
+
+
+
+
+
+
+var SceneI = new Phaser.Class({
+
+    Extends: Phaser.Scene,
+
+    initialize:
+
+    function SceneH ()
+    {
+        Phaser.Scene.call(this, { key: 'sceneE' });
+    },
+
+    preload: function ()
+    {
+        this.load.image('mech', 'assets/pics/titan-mech.png');
+    },
+
+    create: function ()
+    {
+        this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
+        
+
+        if (DEBUG_MODE ==true) {
+
+            this.add.text(32, 32, 'I', { fill: 'white' });
+        }
+
+        this.input.once('pointerdown', function (event) {
+
+
+            this.scene.start('sceneA');
+
+        }, this);
+    }
+
+});
+
+
+*/
+
+// Scene list.
+// Each scene will have music and dialogue
+// ========================================
+//
+// This is the main menu screen. (Music + press any key to continue)         - A
+// Wendy is in her house. She says goodnight to her pets and goes to sleep.   - B
+// Wendy wakes up in the house and her cat is gone! She walks out the door     -C
+// Forest walk        - D
+// Meets imp in the forest     -E
+// She's follwing the imp through the forest. Talking to Teddy. Maybe talking to imp   - F
+// Boss fight         G
+// Post boss dialogue    H 
+// Epilogue in the house (almost repeat of the first scene)    I
+
+
+var config = {
+    type: Phaser.AUTO,
+    width: 800,
+    height: 600,
+    backgroundColor: '#000000',
+    parent: 'phaser-example',
+    scene: [ SceneA, SceneB, SceneC, SceneD, SceneE  ] //, SceneF, SceneG, SceneH, SceneI ]
+};
+
+var game = new Phaser.Game(config);
+
+
