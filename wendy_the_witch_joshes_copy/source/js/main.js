@@ -27,7 +27,7 @@ var player;
 var cursors;
 var groundLayer, coinLayer;
 var text;
-//var sceneB_index = 0;
+//var scene_1_index = 0;
 
 function preload() {
     // map made with Tiled in JSON format
@@ -71,8 +71,8 @@ function create() {
     // player will collide with the level tiles 
     this.physics.add.collider(groundLayer, player);
 
-    coinLayer.setTileIndexCallback(17, sceneB_dialogue, this);
-    // when the player overlaps with a tile with index 17, sceneB_dialogue 
+    coinLayer.setTileIndexCallback(17, scene_1_dialogue, this);
+    // when the player overlaps with a tile with index 17, scene_1_dialogue 
     // will be called    
     this.physics.add.overlap(player, coinLayer);
 
@@ -116,22 +116,134 @@ function create() {
 
 
 
-var sceneB_index = 1;
+var scene_1_index = 1;
 
 
-var sceneB_text = [
-"Wendy: Hello Teddy!",
-"Teddy: Hello Wenddy! How are you?",
-"Wendy: OMG You can talk!",
-"Wendy: OMG You can talk!",
+var scene_1_Dialogue_1 = [
+"Wendy: It’s so cozy and warm.",
+"Wendy: *Yawns*",
+"Wendy: Goodnight Teddy.",
+"Teddy: …",
+"Wendy: Goodnight Pookii.",
+"Pookii: *Meow*"
 
 ]
 
+
+var scene_2_Dialogue_1 = [
+"Wendy: Wh-what? Why is it so cold?",
+"Wendy: Who opened the Window?",
+"Teddy:…",
+"Wendy: Oh, I know you didn’t Teddy. It must have been Pookii.",
+"Wendy: Pookii? Pookii?",
+"Wendy: Oh no, he must have run away again!"
+
+]
+
+var scene_2_Dialogue_2 = [
+"Wendy: I would never forget you Teddy. I know I’ll always be safe with you by my side!",
+"Teddy: …",
+"Wendy: No fussing now, we have to go find Pooki."
+
+]
+
+var scene_3_Dialogue_1 = [
+"Wendy: What was that? It’s scary out here Teddy.",
+"Teddy: …",
+"Wendy: You’re right Teddy. Pookii’s probably scared too. We have to find him."
+
+]
+
+
+var scene_3_Dialogue_2 = [
+"Wendy: Pookii, POOKII! Where are you, Pookii?"
+
+]
+
+var scene_4_Dialogue_1 = [
+"Wendy: Oh! Pookii! We found you!",
+"Wendy: I thought we’d lost you. Don’t you know there’s all manner of creatures out at night!",
+
+
+]
+
+
+var scene_4_Dialogue_2 = [
+"Babbleblub: Hahaha.",
+"Babbleblub: Silly, little girl.",
+"Babbleblub: You’ll never guess where I’ve hidden your cat! ",
+"Pookii: *Meow* ",
+"Wendy: Pookii!",
+"Babbleblub: Quiet you!",
+"Pookii: *meow* ",
+"Babbleblub: As I was trying to say, your little cat is the key to the Gates of Hell!",
+"Babbleblub: And now, I can’t wait to bring my family to the mortal world for a devilish reunion!",
+"Babbleblub: Catch me if you can!"
+
+]
+
+var scene_4_Dialogue_3 = [
+"Wendy: Oh Teddy! What are we going to do?",
+"Teddy: …",
+"Wendy: You’re right Teddy. We can’t give up now! Pookii needs us!"
+
+]
+
+var scene_5_Dialogue_1 = [
+
+"Wendy: Look, Teddy, what is that?",
+"Teddy: …",
+"Wendy: You’re right Teddy. Frogs are icky, not to mention they might be poisonous."
+
+]
+
+var scene_5_Dialogue_2 = [
+"Wendy: Watch out Teddy. Don’t get caught in the bramble.",
+"Teddy: …",
+"Wendy: Oh, I know you’ll be careful, just like me."
+
+]
+
+var scene_8_Dialogue_1 = [
+"Babbleblub: At last I can open the Gates of Hell. Hold still you infernal cat!",
+"Pookii: *Outraged Meow*",
+"Wendy: Leave Pookii alone!",
+"Babbleblub: It’s too late, silly girl. The ritual is already underway.",
+"Babbleblub: By the power of Baazelbub, Asmodeus and Fred, I summon you!",
+"Wendy: I won’t let you hurt my precious Pookii!"
+
+]
+
+
+var scene_8_Dialogue_2 = [
+"Babblebub: No! NO! I don’t want to go back to living in the cupboard under my uncle’s stairs!",
+"Wendy: Too bad, that’s where naughty little imps like you belong.",
+"Babbleblub: Nooooooooo!",
+"Wendy: Well done Teddy! We saved Pookii.",
+"Teddy: …",
+"Pookii: *Meow*"
+
+]
+
+
+var scene_9_Dialogue_1 = [
+
+"Wendy: Now I can finally get some sleep.",
+"*Yawns*",
+"Wendy: And no running off this time, Pookii.",
+"Pookii: *meow*",
+"Wendy: Goodnight Teddy.",
+"Teddy: …",
+"Wendy: Goodnight Pookii.",
+"Pookii: *Meow*"
+]
+
+
 // this function will be called when the player touches a coin
-function sceneB_dialogue(sprite, tile) {
+function scene_1_dialogue(sprite, tile) {
     coinLayer.removeTileAt(tile.x, tile.y); // remove the tile/coin
-    sceneB_index++; // add 1 points to the score
-    text.setText(sceneB_text[sceneB_index]);
+    scene_1_index++; // add 1 points to the score
+    text.setText(scene_1_Dialogue_1[scene_1_index]);
 	//text.setText(score); // set the text to show the current score
     return false;
 }
@@ -596,15 +708,15 @@ var game = new Phaser.Game(config);
 //MYWORK
 
 // this function will be called when the player touches the event box (index 17)
-function sceneB_dialogue(sprite, tile) {
+function scene_1_dialogue(sprite, tile) {
     coinLayer.removeTileAt(tile.x, tile.y); // remove the tile/coin
     text.setText(score); // set the text to show the current score
     return false;
 }
 
 
-coinLayer.setTileIndexCallback(17, sceneB_dialogue, this);
-    // when the player overlaps with a tile with index 17, sceneB_dialogue will be called 
+coinLayer.setTileIndexCallback(17, scene_1_dialogue, this);
+    // when the player overlaps with a tile with index 17, scene_1_dialogue will be called 
     this.physics.add.overlap(player, coinLayer);
 
 */
