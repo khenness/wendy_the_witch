@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tidepool</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+</head>
+<body>
+
+<div id="header" class="container">
+	<div id="logo">
+		<h1>Wendy Pendlewick and the Gates Of Hell!!!</h1>
+	</div>
+	<div id="menu">
+		<ul>
+			<!--<li class="active"><a href="#" accesskey="1" title="">Home</a></li> -->
+			
+			<!--<li><a href="https://github.com/khenness/" accesskey="3" title="">Github</a></li>
+<li><a href="https://linkedin.com/in/khenness" accesskey="3" title="">LinkedIn</a></li>
+			<li><a href="https://twitter.com/khhenness" accesskey="3" title="">Twitter</a></li>-->
+			<!--<li><a href="http://khenness.netsoc.ie/about.html" accesskey="3" title="">About</a></li>-->
+			<!--<li><a href="#" accesskey="5" title="">Twitte</a></li>
+			<li><a href="#" accesskey="5" title="">My CV</a></li>-->
+			
+		</ul>
+	</div>
+</div>
+
+
+<div id="page">
+	<div class="container">
+		
+		<div class="title">
+		<!--<h1>Gravity Simulator Game:</h1>-->
+
+		</div>
+<!--<p>A learning project by Kevin Hennessy, developed using HTML5 and Javascript </p>-->
+<div id="tidepool"></div>
+
+<script>
+    var config = {
+        type: Phaser.AUTO,
+        width: 800,
+        height: 600,
+		parent: 'tidepool',
+        physics: {
+            default: 'arcade',
+            arcade: {
+                gravity: { y: 0 }
+            }
+        },
+        scene: {
+            preload: preload,
+            create: create
+        }
+    };
+
+    var game = new Phaser.Game(config);
+
+    function preload ()
+    {
+        this.load.setBaseURL('http://labs.phaser.io');
+
+        this.load.image('sky', 'assets/skies/space3.png');
+        this.load.image('logo', 'assets/sprites/phaser-dude.png');
+        this.load.image('red', 'assets/particles/red.png');
+    }
+
+    function create ()
+    {
+        this.add.image(400, 300, 'sky');
+
+        var particles = this.add.particles('red');
+
+        var emitter = particles.createEmitter({
+            speed: 100,
+            scale: { start: 1, end: 0 },
+            blendMode: 'ADD'
+        });
+
+        var logo = this.physics.add.image(400, 100, 'logo');
+
+        logo.setVelocity(100, 200);
+        logo.setBounce(1, 1);
+        logo.setCollideWorldBounds(true);
+
+        emitter.startFollow(logo);
+    }
+    </script>    
+	
+</div>
+</div>
+
+<div id="copyright" class="container">
+<p>A project for GameJamPlus Dublin 2019!</p>
+<p>By Josh Goodwin, Dylan Bourke, James Thornton and Kevin Hennessy</p>
+	<!--<p>Copyright (c) 2013 | All rights reserved. | Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>.</p>-->
+</div>
+</body>
+</html>
