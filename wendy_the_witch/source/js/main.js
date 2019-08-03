@@ -204,7 +204,12 @@ var SceneA = new Phaser.Class({
         }
         
         this.add.text(100, 300, 'Wendy Pendlewick and the Gates Of Hell!!!', { fill: 'white' });
-        
+        this.add.text(100, 332, 'Art by David Thornton', { fill: 'white' });
+        this.add.text(100, 364, 'Music by Dylan Bourke', { fill: 'white' });
+        this.add.text(100, 396, 'Writing by Josh Goodwin', { fill: 'white' });
+        this.add.text(100, 428, 'Programming by Kevin Hennessy and Josh Goodwin', { fill: 'white' });
+        this.add.text(100, 460, 'Controls: Arrow keys to move, space to shoot', { fill: 'white' });
+        this.add.text(100, 492, 'Press any key to start...', { fill: 'white' });
         
         music = this.sound.add('home_light');
 
