@@ -190,6 +190,7 @@ var SceneA = new Phaser.Class({
     preload: function ()
     {
         this.load.image('face', 'assets/pics/bw-face.png');
+        this.load.audio('home_light', ['assets/music/Home_1.0.mp3'] ); // could put .ogg files here in this list for browser compatibility
     },
 
     create: function ()
@@ -201,13 +202,23 @@ var SceneA = new Phaser.Class({
 
             this.add.text(32, 32, 'Scene A - This is the main menu screen. (Music + press any key to continue)', { fill: 'white' });
         }
+        
+        this.add.text(100, 300, 'Wendy Pendlewick and the Gates Of Hell!!!', { fill: 'white' });
+        
+        
+        music = this.sound.add('home_light');
+
+        music.play({
+            loop: true
+        });
+
 
 
 
         this.input.once('pointerdown', function () {
 
             console.log('From SceneA to SceneB');
-
+            music.stop();
             this.scene.start('sceneB');
 
         }, this);
