@@ -229,6 +229,9 @@ var SceneB = new Phaser.Class({
     preload: function ()
     {
         this.load.image('arrow', 'assets/pics/titan-mech.png');
+        this.load.audio('home_light', ['assets/music/Home_1.0.mp3'] ); // could put .ogg files here in this list for browser compatibility
+
+
     },
 
     create: function ()
@@ -240,6 +243,13 @@ var SceneB = new Phaser.Class({
 
             this.add.text(32, 32, 'Scene B - Wendy is in her house. She says goodnight to her pets and goes to sleep.', { fill: 'white' });
         }
+
+        
+        //music = this.add.audio('home_light');
+
+        //music.play();
+
+
 
         this.input.once('pointerdown', function (event) {
 
