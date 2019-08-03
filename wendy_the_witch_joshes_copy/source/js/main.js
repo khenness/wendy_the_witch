@@ -27,7 +27,7 @@ var player;
 var cursors;
 var groundLayer, coinLayer;
 var text;
-var dialog_index = 0;
+//var sceneB_index = 0;
 
 function preload() {
     // map made with Tiled in JSON format
@@ -71,8 +71,8 @@ function create() {
     // player will collide with the level tiles 
     this.physics.add.collider(groundLayer, player);
 
-    coinLayer.setTileIndexCallback(17, collectCoin, this);
-    // when the player overlaps with a tile with index 17, collectCoin 
+    coinLayer.setTileIndexCallback(17, sceneB_dialogue, this);
+    // when the player overlaps with a tile with index 17, sceneB_dialogue 
     // will be called    
     this.physics.add.overlap(player, coinLayer);
 
@@ -116,8 +116,10 @@ function create() {
 
 
 
+var sceneB_index = 1;
 
-var dialogue1 = [
+
+var sceneB_text = [
 "Wendy: Hello Teddy!",
 "Teddy: Hello Wenddy! How are you?",
 "Wendy: OMG You can talk!",
@@ -126,10 +128,10 @@ var dialogue1 = [
 ]
 
 // this function will be called when the player touches a coin
-function collectCoin(sprite, tile) {
+function sceneB_dialogue(sprite, tile) {
     coinLayer.removeTileAt(tile.x, tile.y); // remove the tile/coin
-    dialog_index++; // add 1 points to the score
-    text.setText(dialogue[dialog_index-1]);
+    sceneB_index++; // add 1 points to the score
+    text.setText(sceneB_text[sceneB_index]);
 	//text.setText(score); // set the text to show the current score
     return false;
 }
@@ -594,15 +596,15 @@ var game = new Phaser.Game(config);
 //MYWORK
 
 // this function will be called when the player touches the event box (index 17)
-function collectCoin(sprite, tile) {
+function sceneB_dialogue(sprite, tile) {
     coinLayer.removeTileAt(tile.x, tile.y); // remove the tile/coin
     text.setText(score); // set the text to show the current score
     return false;
 }
 
 
-coinLayer.setTileIndexCallback(17, collectCoin, this);
-    // when the player overlaps with a tile with index 17, collectCoin will be called 
+coinLayer.setTileIndexCallback(17, sceneB_dialogue, this);
+    // when the player overlaps with a tile with index 17, sceneB_dialogue will be called 
     this.physics.add.overlap(player, coinLayer);
 
 */
