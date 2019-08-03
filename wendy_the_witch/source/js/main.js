@@ -361,7 +361,7 @@ var SceneE = new Phaser.Class({
 
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'Scene E - Meets imp in the forest ', { fill: 'white' });
+            this.add.text(32, 32, 'Scene E - Wendy meets the Imp in the forest. He stole her cat!', { fill: 'white' });
         }
 
         this.input.once('pointerdown', function (event) {
@@ -405,7 +405,7 @@ var SceneF = new Phaser.Class({
 
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'Scene F - Shes follwing the imp through the forest. Talking to Teddy. Maybe talking to imp', { fill: 'white' });
+            this.add.text(32, 32, 'Scene F - Wendy follows the imp through the forest. Talking to Teddy.', { fill: 'white' });
         }
 
         this.input.once('pointerdown', function (event) {
@@ -446,7 +446,7 @@ var SceneG = new Phaser.Class({
 
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'Scene G - Boss fight', { fill: 'white' });
+            this.add.text(32, 32, 'Scene G - Wendy has a boss fight with the imp', { fill: 'white' });
         }
 
         this.input.once('pointerdown', function (event) {
