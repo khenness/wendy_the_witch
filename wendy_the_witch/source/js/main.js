@@ -367,7 +367,7 @@ var SceneE = new Phaser.Class({
         this.input.once('pointerdown', function (event) {
 
 
-            this.scene.start('sceneA');
+            this.scene.start('sceneF');
 
         }, this);
     }
@@ -378,7 +378,7 @@ var SceneE = new Phaser.Class({
 
 
 
-/*
+
 
 
 
@@ -405,7 +405,7 @@ var SceneF = new Phaser.Class({
 
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'F', { fill: 'white' });
+            this.add.text(32, 32, 'Fffff', { fill: 'white' });
         }
 
         this.input.once('pointerdown', function (event) {
@@ -446,13 +446,13 @@ var SceneG = new Phaser.Class({
 
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'G', { fill: 'white' });
+            this.add.text(32, 32, 'GGGGGGGG', { fill: 'white' });
         }
 
         this.input.once('pointerdown', function (event) {
 
 
-            this.scene.start('sceneI');
+            this.scene.start('sceneA');
 
         }, this);
     }
@@ -460,7 +460,7 @@ var SceneG = new Phaser.Class({
 });
 
 
-
+/*
 
 
 
@@ -565,7 +565,7 @@ var config = {
     height: 600,
     backgroundColor: '#000000',
     parent: 'phaser-example',
-    scene: [ SceneA, SceneB, SceneC, SceneD, SceneE  ] //, SceneF, SceneG, SceneH, SceneI ]
+    scene: [ SceneA, SceneB, SceneC, SceneD, SceneE, SceneF, SceneG ] /// SceneH, SceneI ]
 };
 
 var game = new Phaser.Game(config);
