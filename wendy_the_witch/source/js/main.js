@@ -199,7 +199,7 @@ var SceneA = new Phaser.Class({
 
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'This is the main menu screen. (Music + press any key to continue)', { fill: 'white' });
+            this.add.text(32, 32, 'Scene A - This is the main menu screen. (Music + press any key to continue)', { fill: 'white' });
         }
 
 
@@ -238,7 +238,7 @@ var SceneB = new Phaser.Class({
         
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'Wendy is in her house. She says goodnight to her pets and goes to sleep.', { fill: 'white' });
+            this.add.text(32, 32, 'Scene B - Wendy is in her house. She says goodnight to her pets and goes to sleep.', { fill: 'white' });
         }
 
         this.input.once('pointerdown', function (event) {
@@ -280,7 +280,7 @@ var SceneC = new Phaser.Class({
 
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'Wendy wakes up in the house and her cat is gone! She walks out the door', { fill: 'white' });
+            this.add.text(32, 32, 'Scene C - Wendy wakes up in the house and her cat is gone! She walks out the door', { fill: 'white' });
         }
 
         this.input.once('pointerdown', function (event) {
@@ -319,7 +319,7 @@ var SceneD = new Phaser.Class({
 
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'Wendy wanders through the forest and dodges enemies', { fill: 'white' });
+            this.add.text(32, 32, 'Scene D - Wendy wanders through the forest and dodges enemies', { fill: 'white' });
         }
 
         this.input.once('pointerdown', function (event) {
@@ -361,7 +361,7 @@ var SceneE = new Phaser.Class({
 
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'EEEEEEE', { fill: 'white' });
+            this.add.text(32, 32, 'Scene E - Meets imp in the forest ', { fill: 'white' });
         }
 
         this.input.once('pointerdown', function (event) {
@@ -405,7 +405,7 @@ var SceneF = new Phaser.Class({
 
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'Fffff', { fill: 'white' });
+            this.add.text(32, 32, 'Scene F - Shes follwing the imp through the forest. Talking to Teddy. Maybe talking to imp', { fill: 'white' });
         }
 
         this.input.once('pointerdown', function (event) {
@@ -446,13 +446,13 @@ var SceneG = new Phaser.Class({
 
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'GGGGGGGG', { fill: 'white' });
+            this.add.text(32, 32, 'Scene G - Boss fight', { fill: 'white' });
         }
 
         this.input.once('pointerdown', function (event) {
 
 
-            this.scene.start('sceneA');
+            this.scene.start('sceneH');
 
         }, this);
     }
@@ -460,7 +460,7 @@ var SceneG = new Phaser.Class({
 });
 
 
-/*
+
 
 
 
@@ -472,7 +472,7 @@ var SceneH = new Phaser.Class({
 
     function SceneH ()
     {
-        Phaser.Scene.call(this, { key: 'sceneE' });
+        Phaser.Scene.call(this, { key: 'sceneH' });
     },
 
     preload: function ()
@@ -487,7 +487,7 @@ var SceneH = new Phaser.Class({
 
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'H', { fill: 'white' });
+            this.add.text(32, 32, 'Scene H - Post boss dialogue', { fill: 'white' });
         }
 
         this.input.once('pointerdown', function (event) {
@@ -513,7 +513,7 @@ var SceneI = new Phaser.Class({
 
     function SceneH ()
     {
-        Phaser.Scene.call(this, { key: 'sceneE' });
+        Phaser.Scene.call(this, { key: 'sceneI' });
     },
 
     preload: function ()
@@ -528,7 +528,7 @@ var SceneI = new Phaser.Class({
 
         if (DEBUG_MODE ==true) {
 
-            this.add.text(32, 32, 'I', { fill: 'white' });
+            this.add.text(32, 32, 'Scene I - Epilogue in the house (almost repeat of the first scene)', { fill: 'white' });
         }
 
         this.input.once('pointerdown', function (event) {
@@ -542,7 +542,7 @@ var SceneI = new Phaser.Class({
 });
 
 
-*/
+
 
 // Scene list.
 // Each scene will have music and dialogue
@@ -565,7 +565,7 @@ var config = {
     height: 600,
     backgroundColor: '#000000',
     parent: 'phaser-example',
-    scene: [ SceneA, SceneB, SceneC, SceneD, SceneE, SceneF, SceneG ] /// SceneH, SceneI ]
+    scene: [ SceneA, SceneB, SceneC, SceneD, SceneE, SceneF, SceneG, SceneH, SceneI ]
 };
 
 var game = new Phaser.Game(config);
