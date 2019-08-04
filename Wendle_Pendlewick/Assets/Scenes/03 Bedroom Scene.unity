@@ -1,0 +1,3492 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 10
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &130992937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130992939}
+  - component: {fileID: 130992938}
+  m_Layer: 0
+  m_Name: teddy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &130992938
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 130992937}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 2802f8f0c7e6f14469dfdca1fef75a05, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.16, y: 0.16}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &130992939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 130992937}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.261, y: -0.146, z: -0.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &423605592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423605595}
+  - component: {fileID: 423605594}
+  - component: {fileID: 423605593}
+  - component: {fileID: 423605596}
+  - component: {fileID: 423605597}
+  m_Layer: 0
+  m_Name: ExitGameobject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &423605593
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423605592}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!61 &423605594
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423605592}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &423605595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423605592}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.782, y: -0.12, z: 0.20718265}
+  m_LocalScale: {x: 0.19018015, y: 0.33853042, z: 0.20752823}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &423605596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423605592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d51ff1a2106c240bea47b118987c4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: 2
+--- !u!114 &423605597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423605592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3d0e4672363c3740a95274de46b31b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &530438078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 530438080}
+  - component: {fileID: 530438079}
+  m_Layer: 0
+  m_Name: Pookii
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &530438079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 11400000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 530438078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Character Name
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  soundEffect: {fileID: 0}
+  portraits: []
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: 
+--- !u!4 &530438080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 530438078}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.445}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &754235334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 754235336}
+  - component: {fileID: 754235335}
+  m_Layer: 0
+  m_Name: Teddy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &754235335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 11400000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754235334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Character Name
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  soundEffect: {fileID: 0}
+  portraits: []
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: 
+--- !u!4 &754235336
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754235334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &951676087
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 951676090}
+  - component: {fileID: 951676089}
+  - component: {fileID: 951676088}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &951676088
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 951676087}
+  m_Enabled: 1
+--- !u!20 &951676089
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 951676087}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.25882354, g: 0.13725491, b: 0.2784314, a: 1}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 0.57727736
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &951676090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 951676087}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1093535021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1093535023}
+  - component: {fileID: 1093535022}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1093535022
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1093535021}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d75c32f8cfdfc0c43b5499d06e012584, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1093535023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1093535021}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.12148612, y: -0.054883376, z: 0.21271151}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1142760611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1142760613}
+  - component: {fileID: 1142760612}
+  m_Layer: 0
+  m_Name: DialogueTrigger1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1142760612
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142760611}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &1142760613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142760611}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.105557024, y: -0.064, z: 0.21313477}
+  m_LocalScale: {x: 0.2096875, y: 0.8361036, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1188952451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188952453}
+  - component: {fileID: 1188952452}
+  m_Layer: 0
+  m_Name: pookii
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1188952452
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1188952451}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d9d02ffe7ede2dc439d3cc304407607b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.16, y: 0.16}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1188952453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1188952451}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.56797, y: -0.13176861, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1265493605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1265493609}
+  - component: {fileID: 1265493608}
+  - component: {fileID: 1265493607}
+  - component: {fileID: 1265493606}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1265493606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1265493605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1997211142, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ForceModuleActive: 0
+--- !u!114 &1265493607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1265493605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1265493608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1265493605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 5
+--- !u!4 &1265493609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1265493605}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1269643346
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1269643348}
+  - component: {fileID: 1269643347}
+  m_Layer: 0
+  m_Name: _FungusState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1269643347
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1269643346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedFlowchart: {fileID: 1400149311}
+--- !u!4 &1269643348
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1269643346}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1276130840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1276130841}
+  - component: {fileID: 1276130842}
+  m_Layer: 0
+  m_Name: FloorCollider (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1276130841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1276130840}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.059, y: 0.045, z: 0}
+  m_LocalScale: {x: 0.1925, y: 0.989706, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1438687338}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1276130842
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1276130840}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!1 &1306269781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1306269783}
+  - component: {fileID: 1306269782}
+  m_Layer: 0
+  m_Name: Wendy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1306269782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 11400000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1306269781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Character Name
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  soundEffect: {fileID: 0}
+  portraits: []
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: 
+--- !u!4 &1306269783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1306269781}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1400149310
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114597934102570870, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: selectedCommands.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886449153222582, guid: 1bd347c86ad129c43a15d2152a6bb0f2, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886449153222582, guid: 1bd347c86ad129c43a15d2152a6bb0f2, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886449153222582, guid: 1bd347c86ad129c43a15d2152a6bb0f2, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886449153222582, guid: 1bd347c86ad129c43a15d2152a6bb0f2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886449153222582, guid: 1bd347c86ad129c43a15d2152a6bb0f2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886449153222582, guid: 1bd347c86ad129c43a15d2152a6bb0f2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886449153222582, guid: 1bd347c86ad129c43a15d2152a6bb0f2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886449153222582, guid: 1bd347c86ad129c43a15d2152a6bb0f2, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114597934102570870, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[0]
+      value: 
+      objectReference: {fileID: 1727209917}
+    - target: {fileID: 114597934102570870, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: selectedCommands.Array.data[0]
+      value: 
+      objectReference: {fileID: 1727209850}
+    m_RemovedComponents:
+    - {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: 1bd347c86ad129c43a15d2152a6bb0f2, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!114 &1400149311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114597934102570870, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  scrollPos: {x: 358.8342, y: 91.8747}
+  variablesScrollPos: {x: 0, y: 0}
+  variablesExpanded: 1
+  blockViewHeight: 400
+  zoom: 0.79000026
+  scrollViewRect:
+    serializedVersion: 2
+    x: -343
+    y: -340
+    width: 1114
+    height: 859
+  selectedBlocks:
+  - {fileID: 1727209917}
+  selectedCommands: []
+  variables: []
+  description: 
+  stepPause: 0
+  colorCommands: 1
+  hideComponents: 1
+  saveSelection: 1
+  localizationId: 
+  showLineNumbers: 0
+  hideCommands: []
+  luaEnvironment: {fileID: 0}
+  luaBindingName: flowchart
+--- !u!1 &1435744408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 100000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1435744410}
+  - component: {fileID: 1435744409}
+  m_Layer: 0
+  m_Name: Babblebub
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1435744409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 11400000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1435744408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Character Name
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  soundEffect: {fileID: 0}
+  portraits: []
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: 
+--- !u!4 &1435744410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 400000, guid: b20518d45890e4be59ba82946f88026c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1435744408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1438687336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1438687338}
+  - component: {fileID: 1438687337}
+  m_Layer: 0
+  m_Name: Scenes_Bedroom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1438687337
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1438687336}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b3336098ddceb3747818a8f30ca2c4a2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.92, y: 0.84}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1438687338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1438687336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1995371964}
+  - {fileID: 1276130841}
+  - {fileID: 2145609613}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1727209840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1351267612553692, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1727209918}
+  - component: {fileID: 1400149311}
+  - component: {fileID: 1727209851}
+  - component: {fileID: 1727209857}
+  - component: {fileID: 1727209856}
+  - component: {fileID: 1727209852}
+  - component: {fileID: 1727209853}
+  - component: {fileID: 1727209854}
+  - component: {fileID: 1727209855}
+  - component: {fileID: 1727209843}
+  - component: {fileID: 1727209850}
+  - component: {fileID: 1727209849}
+  - component: {fileID: 1727209848}
+  - component: {fileID: 1727209847}
+  - component: {fileID: 1727209846}
+  - component: {fileID: 1727209845}
+  - component: {fileID: 1727209844}
+  - component: {fileID: 1727209917}
+  - component: {fileID: 1727209916}
+  - component: {fileID: 1727209915}
+  - component: {fileID: 1727209914}
+  - component: {fileID: 1727209913}
+  - component: {fileID: 1727209912}
+  - component: {fileID: 1727209911}
+  - component: {fileID: 1727209910}
+  - component: {fileID: 1727209909}
+  - component: {fileID: 1727209908}
+  - component: {fileID: 1727209907}
+  - component: {fileID: 1727209906}
+  - component: {fileID: 1727209905}
+  - component: {fileID: 1727209904}
+  - component: {fileID: 1727209903}
+  - component: {fileID: 1727209902}
+  - component: {fileID: 1727209901}
+  - component: {fileID: 1727209900}
+  - component: {fileID: 1727209899}
+  - component: {fileID: 1727209898}
+  - component: {fileID: 1727209897}
+  - component: {fileID: 1727209896}
+  - component: {fileID: 1727209895}
+  - component: {fileID: 1727209894}
+  - component: {fileID: 1727209893}
+  - component: {fileID: 1727209892}
+  - component: {fileID: 1727209891}
+  - component: {fileID: 1727209890}
+  - component: {fileID: 1727209889}
+  - component: {fileID: 1727209888}
+  - component: {fileID: 1727209887}
+  - component: {fileID: 1727209886}
+  - component: {fileID: 1727209885}
+  - component: {fileID: 1727209884}
+  - component: {fileID: 1727209883}
+  - component: {fileID: 1727209882}
+  - component: {fileID: 1727209881}
+  - component: {fileID: 1727209880}
+  - component: {fileID: 1727209879}
+  - component: {fileID: 1727209878}
+  - component: {fileID: 1727209877}
+  - component: {fileID: 1727209876}
+  - component: {fileID: 1727209875}
+  - component: {fileID: 1727209874}
+  - component: {fileID: 1727209873}
+  - component: {fileID: 1727209872}
+  - component: {fileID: 1727209871}
+  - component: {fileID: 1727209870}
+  - component: {fileID: 1727209869}
+  - component: {fileID: 1727209868}
+  - component: {fileID: 1727209867}
+  - component: {fileID: 1727209866}
+  - component: {fileID: 1727209865}
+  - component: {fileID: 1727209864}
+  - component: {fileID: 1727209863}
+  - component: {fileID: 1727209862}
+  - component: {fileID: 1727209861}
+  - component: {fileID: 1727209860}
+  - component: {fileID: 1727209859}
+  - component: {fileID: 1727209858}
+  m_Layer: 0
+  m_Name: Dialogue Text Flowchart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1727209843
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114422278183813308, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -32.99675
+    y: 83.991165
+    width: 184.17717
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 7
+  blockName: 'Scene 2: Dialogue 1:'
+  description: Pookii missing
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1727209850}
+  - {fileID: 1727209849}
+  - {fileID: 1727209848}
+  - {fileID: 1727209847}
+  - {fileID: 1727209846}
+  - {fileID: 1727209845}
+  - {fileID: 1727209844}
+--- !u!114 &1727209844
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114756606170930518, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 14
+  indentLevel: 0
+  storyText: Come on Teddy. We have to go find Pookii.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209845
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114301704894744142, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  storyText: Oh no, he must have run away again!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209846
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114102682632194606, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 0
+  storyText: Pookii? Pookii?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209847
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114650198743246104, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
+  storyText: "Oh, I know you didn\u2019t Teddy. It must have been Pookii."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209848
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114057904563604352, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 0
+  storyText: '...'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209849
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114367381544801644, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  storyText: Who opened the Window?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209850
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114875233455977556, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  storyText: 'Wh-what? Why is it so cold? '
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209851
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114559057908020430, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -264.5371
+    y: 94.90479
+    width: 184.17717
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 0
+  blockName: 'Scene 1: Dialogue 1:'
+  description: Goodnight
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1727209857}
+  - {fileID: 1727209856}
+  - {fileID: 1727209855}
+  - {fileID: 1727209854}
+  - {fileID: 1727209853}
+  - {fileID: 1727209852}
+--- !u!114 &1727209852
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114659384222114612, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 3
+  indentLevel: 0
+  storyText: '*Meow*'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209853
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114675729509133170, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 4
+  indentLevel: 0
+  storyText: Goodnight Pookii.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209854
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114011155495288680, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  storyText: '...'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209855
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114146265053664486, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 6
+  indentLevel: 0
+  storyText: Goodnight Teddy.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209856
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114017239165196512, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 2
+  indentLevel: 0
+  storyText: '*Yawns*'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209857
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114120959967038688, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1
+  indentLevel: 0
+  storyText: "It\u2019s so cozy and warm.\r\n"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209858
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114310181197465950, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 88
+  indentLevel: 0
+  storyText: '*Meow*'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209859
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114172203958230442, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 87
+  indentLevel: 0
+  storyText: '*Burps a puff of smoke*'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209860
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114690818634926038, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 86
+  indentLevel: 0
+  storyText: Goodnight Teddy.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209861
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114546194833081008, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 85
+  indentLevel: 0
+  storyText: '...'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209862
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114022526229181756, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 84
+  indentLevel: 0
+  storyText: Goodnight Pookii.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209863
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114315006385433582, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 83
+  indentLevel: 0
+  storyText: '...'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209864
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114077389543568492, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 82
+  indentLevel: 0
+  storyText: '*Meow*'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209865
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114196500891766364, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 81
+  indentLevel: 0
+  storyText: "I won\u2019t let you hurt my precious Pookii!"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209866
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114092963492024322, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 78
+  indentLevel: 0
+  storyText: By the power of Baazelbub, Asmodeus and Fred, I summon you!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209867
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114550344096204004, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 77
+  indentLevel: 0
+  storyText: "It\u2019s too late, silly girl. The ritual is already underway."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209868
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114717563129686844, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 76
+  indentLevel: 0
+  storyText: Leave Pookii alone!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209869
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114051546422086140, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 75
+  indentLevel: 0
+  storyText: '*Outraged Meow*'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209870
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114786910293508998, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 74
+  indentLevel: 0
+  storyText: At last I can open the Gates of Hell. Hold still you infernal cat!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209871
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114175980198324390, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 773.9278
+    y: 87.92189
+    width: 184.17717
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 96
+  blockName: 'Scene 8: Dialogue 1:'
+  description: final battle dialogue
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1727209870}
+  - {fileID: 1727209869}
+  - {fileID: 1727209868}
+  - {fileID: 1727209867}
+  - {fileID: 1727209866}
+  - {fileID: 1727209865}
+--- !u!114 &1727209872
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114134294425539408, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 72
+  indentLevel: 0
+  storyText: Well done Teddy! We saved Pookii.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209873
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114866064262643994, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 71
+  indentLevel: 0
+  storyText: Nooooooooo!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209874
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114831310977800022, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 70
+  indentLevel: 0
+  storyText: "Too bad, that\u2019s where naughty little imps like you belong."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209875
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114358425135629778, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 69
+  indentLevel: 0
+  storyText: "No! NO! I don\u2019t want to go back to living in the cupboard under
+    my uncle\u2019s stairs!"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209876
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114838922560931202, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 986.6449
+    y: 196.26378
+    width: 184.17717
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 95
+  blockName: 'Scene 8: Dialogue 2:'
+  description: Babbleblub Defeat
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1727209875}
+  - {fileID: 1727209874}
+  - {fileID: 1727209873}
+  - {fileID: 1727209872}
+  - {fileID: 1727209863}
+  - {fileID: 1727209864}
+--- !u!114 &1727209877
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114971295954035612, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 67
+  indentLevel: 0
+  storyText: "You\u2019re right Teddy. Frogs are icky, not to mention they might be
+    poisonous."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209878
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114183792350977942, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 66
+  indentLevel: 0
+  storyText: '...'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209879
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114005961946852470, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 65
+  indentLevel: 0
+  storyText: Look, Teddy, what is that?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209880
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114464510640908402, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 565.3479
+    y: 89.0242
+    width: 184.17717
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 94
+  blockName: 'Scene 5: Dialogue 1:'
+  description: Sees Frog for first time
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1727209879}
+  - {fileID: 1727209878}
+  - {fileID: 1727209877}
+--- !u!114 &1727209881
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114453278774962526, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 62
+  indentLevel: 0
+  storyText: "Oh, I know you\u2019ll be careful, just like me."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209882
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114901992273647166, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 61
+  indentLevel: 0
+  storyText: '...'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209883
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114036482563077738, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 60
+  indentLevel: 0
+  storyText: "Watch out Teddy. Don\u2019t get caught in the bramble."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209884
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114082846031646226, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 566.5659
+    y: 165.29398
+    width: 184.17717
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 93
+  blockName: 'Scene 5: Dialogue 2:'
+  description: Sees bramble for the first time
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1727209883}
+  - {fileID: 1727209882}
+  - {fileID: 1727209881}
+--- !u!114 &1727209885
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114754617194655946, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 58
+  indentLevel: 0
+  storyText: '*Subdued Meow* '
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209886
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114497180871705908, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 57
+  indentLevel: 0
+  storyText: And no running off this time, Pookii.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209887
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114670946191246376, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 56
+  indentLevel: 0
+  storyText: '*Yawns*'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209888
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114891247988138228, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 55
+  indentLevel: 0
+  storyText: Now I can finally get some sleep.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209889
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114361215070678452, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 979.8404
+    y: 104.41205
+    width: 184.17717
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 92
+  blockName: 'Scene 9: Dialogue 1:'
+  description: Return Home
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1727209888}
+  - {fileID: 1727209887}
+  - {fileID: 1727209886}
+  - {fileID: 1727209885}
+  - {fileID: 1727209860}
+  - {fileID: 1727209861}
+  - {fileID: 1727209862}
+  - {fileID: 1727209858}
+  - {fileID: 1727209859}
+--- !u!114 &1727209890
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114802603262773674, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 53
+  indentLevel: 0
+  storyText: Catch me if you can!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209891
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114523475012056722, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 50
+  indentLevel: 0
+  storyText: Pookii!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209892
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114474644770857210, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 49
+  indentLevel: 0
+  storyText: Quiet you!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209893
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114020828342335184, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 48
+  indentLevel: 0
+  storyText: '*Subdued Meow*'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209894
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114549692253887852, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 47
+  indentLevel: 0
+  storyText: "As I was trying to say, your little cat is the key to the Gates of Hell!\r\n"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209895
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114119516208124460, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 46
+  indentLevel: 0
+  storyText: "And now, I can\u2019t wait to bring my family to the mortal world for
+    a devilish reunion!"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209896
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114457481301292648, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 44
+  indentLevel: 0
+  storyText: "You\u2019re right Teddy. We can\u2019t give up now! Pookii needs us!"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209897
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114568786061646632, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 43
+  indentLevel: 0
+  storyText: '...'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209898
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114014209689210758, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 42
+  indentLevel: 0
+  storyText: Oh Teddy! What are we going to do?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209899
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114101767862847916, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 349.15192
+    y: 243.73119
+    width: 184.17717
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 91
+  blockName: 'Scene 4: Dialogue 3:'
+  description: babbleblub left
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1727209898}
+  - {fileID: 1727209897}
+  - {fileID: 1727209896}
+--- !u!114 &1727209900
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114572648399171082, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 40
+  indentLevel: 0
+  storyText: '*Muffled Meow*'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209901
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114114345075503140, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 39
+  indentLevel: 0
+  storyText: "You\u2019ll never guess where I\u2019ve hidden your cat! "
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209902
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114526990052167278, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 38
+  indentLevel: 0
+  storyText: Silly, little girl.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209903
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114268413563075586, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 37
+  indentLevel: 0
+  storyText: Hahaha.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209904
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114830007836126044, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 350.57986
+    y: 162.9155
+    width: 184.17717
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 90
+  blockName: 'Scene 4: Dialogue 2:'
+  description: "Scene 4: Dialogue 2:\r\n"
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1727209903}
+  - {fileID: 1727209902}
+  - {fileID: 1727209901}
+  - {fileID: 1727209900}
+  - {fileID: 1727209891}
+  - {fileID: 1727209892}
+  - {fileID: 1727209893}
+  - {fileID: 1727209894}
+  - {fileID: 1727209895}
+  - {fileID: 1727209890}
+--- !u!114 &1727209905
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114012651785264180, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 33
+  indentLevel: 0
+  storyText: "I thought we\u2019d lost you. Don\u2019t you know there\u2019s all manner
+    of creatures out at night!"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209906
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114600560913539520, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 32
+  indentLevel: 0
+  storyText: Oh! Pookii! We found you!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209907
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114931534920008222, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 360.52716
+    y: 87.38672
+    width: 184.17717
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 89
+  blockName: 'Scene 4: Dialogue 1:'
+  description: Meeting Babbleblub
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1727209906}
+  - {fileID: 1727209905}
+--- !u!114 &1727209908
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114516633097139594, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 27
+  indentLevel: 0
+  storyText: Pookii, POOKII! Where are you, Pookii?
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209909
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114113296952814592, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 157.54024
+    y: 151.99689
+    width: 184.17717
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 26
+  blockName: 'Scene 3: Dialogue 2:'
+  description: looking for pookii ambience
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1727209908}
+--- !u!114 &1727209910
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114036505474603084, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 25
+  indentLevel: 0
+  storyText: '...'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209911
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114284513727050568, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 24
+  indentLevel: 0
+  storyText: "You\u2019re right Teddy, Pookii\u2019s probably scared too. We have
+    to find him."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209912
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114410216026729034, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 20
+  indentLevel: 0
+  storyText: "What was that? It\u2019s scary out here Teddy."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209913
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114176720855045364, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 156.50793
+    y: 83.54658
+    width: 184.17717
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 19
+  blockName: 'Scene 3: Dialogue 1:'
+  description: forest ambience filler
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1727209912}
+  - {fileID: 1727209910}
+  - {fileID: 1727209911}
+--- !u!114 &1727209914
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114381659647428360, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 18
+  indentLevel: 0
+  storyText: That's right. Let's go find Pookii!
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209915
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114956904736754310, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 17
+  indentLevel: 0
+  storyText: '...'
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209916
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114331911409487002, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  indentLevel: 0
+  storyText: "I would never forget you Teddy. I know I\u2019ll always be safe with
+    you by my side!\r\n"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1727209917
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 114775733514113188, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: -30.027344
+    y: 154.14046
+    width: 184.17717
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 15
+  blockName: 'Scene 2: Dialogue 2:'
+  description: leaving room
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 1727209916}
+  - {fileID: 1727209915}
+  - {fileID: 1727209914}
+--- !u!4 &1727209918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4886449153222582, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1400149310}
+  m_GameObject: {fileID: 1727209840}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1917363185
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4388563345077098, guid: efaa8ba9cd4ad1146bb734a59d0fc18c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.759
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388563345077098, guid: efaa8ba9cd4ad1146bb734a59d0fc18c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388563345077098, guid: efaa8ba9cd4ad1146bb734a59d0fc18c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388563345077098, guid: efaa8ba9cd4ad1146bb734a59d0fc18c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388563345077098, guid: efaa8ba9cd4ad1146bb734a59d0fc18c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388563345077098, guid: efaa8ba9cd4ad1146bb734a59d0fc18c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388563345077098, guid: efaa8ba9cd4ad1146bb734a59d0fc18c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4388563345077098, guid: efaa8ba9cd4ad1146bb734a59d0fc18c, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: efaa8ba9cd4ad1146bb734a59d0fc18c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &1995371963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1995371964}
+  - component: {fileID: 1995371965}
+  m_Layer: 0
+  m_Name: FloorCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1995371964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1995371963}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.316, z: 0}
+  m_LocalScale: {x: 1.925, y: 0.1940625, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1438687338}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1995371965
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1995371963}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!1 &2145609612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2145609613}
+  - component: {fileID: 2145609614}
+  m_Layer: 0
+  m_Name: FloorCollider (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2145609613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2145609612}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.054, y: 0.045, z: 0}
+  m_LocalScale: {x: 0.1925, y: 0.98971, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1438687338}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2145609614
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2145609612}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
