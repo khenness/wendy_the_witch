@@ -158,66 +158,7 @@ var SceneBaseClass = new Phaser.Class({
 
 });
 
-    /*
-    preload: function ()
-    {
-        //blank
-    },
-
-    create: function ()
-    {
-        this.add.sprite(400, 300, 'face').setAlpha(0.2);
-
-
-        if (DEBUG_MODE ==true) {
-
-            this.add.text(32, 32, 'Scene A - This is the main menu screen. (Music + press any key to continue)', { fill: 'white' });
-        }
-        
-        this.add.text(100, 300, 'Wendy Pendlewick and the Gates Of Hell!!!', { fill: 'white' });
-        this.add.text(100, 332, 'Art by David Thornton', { fill: 'white' });
-        this.add.text(100, 364, 'Music by Dylan Bourke', { fill: 'white' });
-        this.add.text(100, 396, 'Writing by Josh Goodwin', { fill: 'white' });
-        this.add.text(100, 428, 'Programming by Kevin Hennessy and Josh Goodwin', { fill: 'white' });
-        this.add.text(100, 460, 'Controls: Arrow keys to move, space to shoot', { fill: 'white' });
-        this.add.text(100, 492, 'Developed in 48 hours for Game Jam Plus, Dublin , 4th August 2019', { fill: 'white' });
-        this.add.text(100, 524, 'Press any key to start...', { fill: 'white' });
-        
-        music = this.sound.add('home_light');
-
-        music.play({
-            loop: true
-        });
-
-
-
-
-        this.input.once('pointerdown', function () {
-
-            console.log('From SceneA to SceneB');
-            music.stop();
-            this.scene.start('sceneB');
-
-        }, this);
-    }
-
-});
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 var SceneA = new Phaser.Class({
 
