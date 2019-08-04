@@ -1,6 +1,6 @@
 var DEBUG_MODE = true;
 
-var ENABLE_MUSIC = false;
+var ENABLE_MUSIC = true;
 
 var map;
 var player;
@@ -9,6 +9,7 @@ var groundLayer, coinLayer;
 var text;
 var score = 0;
 
+var myText;
 
 
 
@@ -83,6 +84,60 @@ var SceneBaseClass = new Phaser.Class({
         this.load.atlas('player', 'assets/player_old.png', 'assets/player.json');
 
     },
+        
+
+    show_cutscene_speech: function(person, text){
+        console.log("Got to show_cutscene_speech person is "+ person+ " and text is "+ text)   
+
+        //this.add.text(32, 64, person+":"+text, { fill: 'white' });
+
+        var tconfig = {
+          x: 32,
+          y: 550,
+          text: person+": "+text,
+          style: {
+            fontSize: '34px',
+            fontFamily: 'Arial',
+            color: '#000000',  //'#ffffff',
+            align: 'center',
+            lineSpacing: 44,
+          }
+        };
+        myText = this.make.text(tconfig);
+        myText.setWordWrapWidth(0, false);
+
+    },
+
+    cutscene_press_any_key_to_continue: function(){
+
+
+        console.log("Got to cutscene_press_any_key_to_continue")   
+
+
+        //wait here
+
+        //myText.destroy()
+    },
+
+    finish_cutscene: function(){
+
+        console.log("Got to finish_cutscene")   
+    },
+
+
+
+
+    play_cutscene_scene_1_Dialogue_1: function (){
+        console.log("playing cutscene !!!")
+
+        this.show_cutscene_speech("WENDY", "Hi I am Wendy")
+        this.cutscene_press_any_key_to_continue()
+        //this.show_cutscene_speech("Teddy", "Hi Wendy I am Teddy")
+        this.cutscene_press_any_key_to_continue()
+        this.finish_cutscene()
+
+
+    },
 
     create_base: function ()
     {
@@ -121,7 +176,7 @@ var SceneBaseClass = new Phaser.Class({
         this.physics.world.bounds.height = groundLayer.height;
 
         // create the player sprite    
-        player = this.physics.add.sprite(200, 200, 'player');
+        player = this.physics.add.sprite(200, 450, 'player');
         player.setBounce(0.2); // our player will bounce from items
         player.setCollideWorldBounds(true); // don't go out of the map    
         
@@ -232,6 +287,8 @@ var SceneA = new Phaser.Class({
     create: function ()
     {
         
+        
+
         //this.create_base()
         this.add.sprite(400, 300, 'face').setAlpha(0.2);
         //this.test_func()
@@ -259,6 +316,8 @@ var SceneA = new Phaser.Class({
             });
         }
 
+
+        
 
 
 
@@ -303,7 +362,7 @@ var SceneB = new Phaser.Class({
     create: function ()
     {
         this.create_base()
-        this.arrow = this.add.sprite(400, 300, 'arrow').setOrigin(0, 0.5);
+        //this.arrow = this.add.sprite(400, 300, 'arrow').setOrigin(0, 0.5);
         //this.test_func()
         
         if (DEBUG_MODE ==true) {
@@ -321,7 +380,7 @@ var SceneB = new Phaser.Class({
             });
         }
 
-
+        this.play_cutscene_scene_1_Dialogue_1()
         this.input.once('pointerdown', function (event) {
 
             console.log('From SceneB to SceneC');
@@ -333,8 +392,8 @@ var SceneB = new Phaser.Class({
 
     update: function (time, delta)
     {
-        this.arrow.rotation += 0.01;
-        this.update_base()
+        //this.arrow.rotation += 0.01;
+        //this.update_base()
     }
 
 });
