@@ -43,10 +43,6 @@ var scene_1_Dialogue_1 = [
 
 
 
-function handler (x, y)
-{
-    this.add.image(x, y, 'plush');
-}
 
 
 var SceneBaseClass = new Phaser.Class({
@@ -73,7 +69,7 @@ var SceneBaseClass = new Phaser.Class({
         loading_text = this.add.text(100, 300, 'Loading....', { fill: 'white' });
 
         // TODO: Add Portrait Sprite Loading in here
-        this.load.image('plush', 'assets/pics/profil-sad-plush.png');
+
 
 
         // map made with Tiled in JSON format
@@ -96,14 +92,6 @@ var SceneBaseClass = new Phaser.Class({
 
         
 
-        //event test
-        this.events.on('addImage', handler, this);
-
-        //  The handler function will be sent 2 arguments: x and y
-
-        this.events.emit('addImage', 200, 300);
-        this.events.emit('addImage', 400, 300);
-        this.events.emit('addImage', 600, 300);
 
 
 
