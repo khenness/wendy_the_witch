@@ -166,31 +166,46 @@ function update(time, delta) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-var SceneA = new Phaser.Class({
+var SceneBaseClass = new Phaser.Class({
 
     Extends: Phaser.Scene,
 
     initialize:
 
-    function SceneA ()
+    function SceneBaseClass ()
     {
-        Phaser.Scene.call(this, { key: 'sceneA' });
+        Phaser.Scene.call(this, { key: 'sceneBase' });
     },
 
+    preload_base: function ()
+    {
+    //blank
+        if (DEBUG_MODE ==true) {
+            this.add.text(100, 300, 'called preload_base', { fill: 'white' });
+        }
+    },
+
+    create_base: function ()
+    {
+    //blank
+        if (DEBUG_MODE ==true) {
+            this.add.text(100, 332, 'called create_base', { fill: 'white' });
+        }
+    },
+
+    update_base: function (time, delta)
+    {
+        if (DEBUG_MODE ==true) {
+            this.add.text(100, 364, 'called update_base', { fill: 'white' });
+        }
+    },
+
+});
+
+    /*
     preload: function ()
     {
-        this.load.image('face', 'assets/pics/bw-face.png');
-        this.load.audio('home_light', ['assets/music/Home_1.0.mp3'] ); // could put .ogg files here in this list for browser compatibility
+        //blank
     },
 
     create: function ()
@@ -209,7 +224,8 @@ var SceneA = new Phaser.Class({
         this.add.text(100, 396, 'Writing by Josh Goodwin', { fill: 'white' });
         this.add.text(100, 428, 'Programming by Kevin Hennessy and Josh Goodwin', { fill: 'white' });
         this.add.text(100, 460, 'Controls: Arrow keys to move, space to shoot', { fill: 'white' });
-        this.add.text(100, 492, 'Press any key to start...', { fill: 'white' });
+        this.add.text(100, 492, 'Developed in 48 hours for Game Jam Plus, Dublin , 4th August 2019', { fill: 'white' });
+        this.add.text(100, 524, 'Press any key to start...', { fill: 'white' });
         
         music = this.sound.add('home_light');
 
@@ -231,9 +247,93 @@ var SceneA = new Phaser.Class({
 
 });
 
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var SceneA = new Phaser.Class({
+
+    //Extends: Phaser.Scene,
+    Extends: SceneBaseClass,
+
+    initialize:
+
+    function SceneA ()
+    {
+        Phaser.Scene.call(this, { key: 'sceneA' });
+    },
+
+    preload: function ()
+    {
+
+        this.preload_base()
+        this.load.image('face', 'assets/pics/bw-face.png');
+        //this.load.audio('home_light', ['assets/music/Home_1.0.mp3'] ); // could put .ogg files here in this list for browser compatibility
+        this.load.audio('gribblewood', ['assets/music/TheGribblewood1.0.mp3'] ); // could put .ogg files here in this list for browser compatibility
+    },
+
+    create: function ()
+    {
+        
+        this.create_base()
+        this.add.sprite(400, 300, 'face').setAlpha(0.2);
+        //this.test_func()
+
+        if (DEBUG_MODE ==true) {
+
+            this.add.text(32, 32, 'Scene A - This is the main menu screen. (Music + press any key to continue)', { fill: 'white' });
+        }
+        
+        this.add.text(100, 300, 'Wendy Pendlewick and the Gates Of Hell!!!', { fill: 'white' });
+        this.add.text(100, 332, 'Art by David Thornton', { fill: 'white' });
+        this.add.text(100, 364, 'Music by Dylan Bourke', { fill: 'white' });
+        this.add.text(100, 396, 'Writing by Josh Goodwin', { fill: 'white' });
+        this.add.text(100, 428, 'Programming by Kevin Hennessy and Josh Goodwin', { fill: 'white' });
+        this.add.text(100, 460, 'Controls: Arrow keys to move, space to shoot', { fill: 'white' });
+        this.add.text(100, 492, 'Developed in 48 hours for Game Jam Plus, Dublin , 4th August 2019', { fill: 'white' });
+        this.add.text(100, 524, 'Press any key to start...', { fill: 'white' });
+        
+        music = this.sound.add('gribblewood');
+
+        music.play({
+            loop: true
+        });
+
+
+
+
+        this.input.once('pointerdown', function () {
+
+            console.log('From SceneA to SceneB');
+            music.stop();
+            this.scene.start('sceneB');
+
+        }, this);
+    },
+
+    update: function (time, delta)
+    {
+        this.update_base()
+    }
+
+});
+
 var SceneB = new Phaser.Class({
 
-    Extends: Phaser.Scene,
+    //Extends: Phaser.Scene,
+    Extends: SceneBaseClass,
 
     initialize:
 
@@ -244,22 +344,25 @@ var SceneB = new Phaser.Class({
 
     preload: function ()
     {
+
+        this.preload_base()
         this.load.image('arrow', 'assets/pics/titan-mech.png');
         this.load.audio('home_light', ['assets/music/Home_1.0.mp3'] ); // could put .ogg files here in this list for browser compatibility
-
+        
 
     },
 
     create: function ()
     {
+        this.create_base()
         this.arrow = this.add.sprite(400, 300, 'arrow').setOrigin(0, 0.5);
-
+        //this.test_func()
         
         if (DEBUG_MODE ==true) {
 
             this.add.text(32, 32, 'Scene B - Wendy is in her house. She says goodnight to her pets and goes to sleep.', { fill: 'white' });
         }
-
+        this.add.text(32, 524, 'Wendys house', { fill: 'white' });
         
         music = this.sound.add('home_light');
 
@@ -281,14 +384,15 @@ var SceneB = new Phaser.Class({
     update: function (time, delta)
     {
         this.arrow.rotation += 0.01;
+        this.update_base()
     }
 
 });
 
 var SceneC = new Phaser.Class({
 
-    Extends: Phaser.Scene,
-
+    //Extends: Phaser.Scene,
+    Extends: SceneBaseClass,
     initialize:
 
     function SceneC ()
@@ -298,12 +402,15 @@ var SceneC = new Phaser.Class({
 
     preload: function ()
     {
+        this.preload_base()        
         this.load.image('mech', 'assets/pics/titan-mech.png');
         this.load.audio('home_dark', ['assets/music/Home_dark_1.0.mp3'] ); // could put .ogg files here in this list for browser compatibility
     },
 
     create: function ()
     {
+        
+        this.create_base()
         this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
         
 
@@ -311,7 +418,7 @@ var SceneC = new Phaser.Class({
 
             this.add.text(32, 32, 'Scene C - Wendy wakes up in the house and her cat is gone! She walks out the door', { fill: 'white' });
         }
-
+        this.add.text(32, 524, 'Wendys house', { fill: 'white' });
         music = this.sound.add('home_dark');
         music.play({
             loop: true
@@ -324,6 +431,11 @@ var SceneC = new Phaser.Class({
             this.scene.start('sceneD');
 
         }, this);
+    },
+
+    update: function (time, delta)
+    {
+        this.update_base()
     }
 
 });
@@ -332,8 +444,8 @@ var SceneC = new Phaser.Class({
 
 var SceneD = new Phaser.Class({
 
-    Extends: Phaser.Scene,
-
+    //Extends: Phaser.Scene,
+    Extends: SceneBaseClass,
     initialize:
 
     function SceneD ()
@@ -343,12 +455,15 @@ var SceneD = new Phaser.Class({
 
     preload: function ()
     {
+        this.preload_base()        
         this.load.image('mech', 'assets/pics/titan-mech.png');
         this.load.audio('streets', ['assets/music/Streets1.1.mp3'] ); // could put .ogg files here in this list for browser compatibility
     },
 
     create: function ()
     {
+        
+        this.create_base()
         this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
         
 
@@ -356,6 +471,7 @@ var SceneD = new Phaser.Class({
 
             this.add.text(32, 32, 'Scene D - Wendy wanders through the forest and dodges enemies', { fill: 'white' });
         }
+        this.add.text(32, 524, 'The Gribblewood', { fill: 'white' });
 
         music = this.sound.add('streets');
         music.play({
@@ -368,6 +484,11 @@ var SceneD = new Phaser.Class({
             this.scene.start('sceneE');
 
         }, this);
+    },
+
+    update: function (time, delta)
+    {
+        this.update_base()
     }
 
 });
@@ -380,7 +501,9 @@ var SceneD = new Phaser.Class({
 
 var SceneE = new Phaser.Class({
 
-    Extends: Phaser.Scene,
+    //Extends: Phaser.Scene,
+    
+    Extends: SceneBaseClass,
 
     initialize:
 
@@ -391,12 +514,15 @@ var SceneE = new Phaser.Class({
 
     preload: function ()
     {
+        this.preload_base()        
         this.load.image('mech', 'assets/pics/titan-mech.png');
         this.load.audio('gribblewood', ['assets/music/TheGribblewood1.0.mp3'] ); // could put .ogg files here in this list for browser compatibility
     },
 
     create: function ()
     {
+        
+        this.create_base()
         this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
         
 
@@ -404,7 +530,7 @@ var SceneE = new Phaser.Class({
 
             this.add.text(32, 32, 'Scene E - Wendy meets the Imp in the forest. He stole her cat!', { fill: 'white' });
         }
-        
+        this.add.text(32, 524, 'The Gribblewood', { fill: 'white' });
         music = this.sound.add('gribblewood');
         music.play({
             loop: true
@@ -417,6 +543,11 @@ var SceneE = new Phaser.Class({
             this.scene.start('sceneF');
 
         }, this);
+    },
+
+    update: function (time, delta)
+    {
+        this.update_base()
     }
 
 });
@@ -431,7 +562,9 @@ var SceneE = new Phaser.Class({
 
 var SceneF = new Phaser.Class({
 
-    Extends: Phaser.Scene,
+    //Extends: Phaser.Scene,
+
+    Extends: SceneBaseClass,
 
     initialize:
 
@@ -442,11 +575,13 @@ var SceneF = new Phaser.Class({
 
     preload: function ()
     {
+        this.preload_base()        
         this.load.image('mech', 'assets/pics/titan-mech.png');
     },
 
     create: function ()
     {
+        this.create_base()        
         this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
         
 
@@ -461,6 +596,11 @@ var SceneF = new Phaser.Class({
             this.scene.start('sceneG');
 
         }, this);
+    },
+
+    update: function (time, delta)
+    {
+        this.update_base()
     }
 
 });
@@ -472,8 +612,8 @@ var SceneF = new Phaser.Class({
 
 var SceneG = new Phaser.Class({
 
-    Extends: Phaser.Scene,
-
+    //Extends: Phaser.Scene,
+    Extends: SceneBaseClass,
     initialize:
 
     function SceneH ()
@@ -483,6 +623,7 @@ var SceneG = new Phaser.Class({
 
     preload: function ()
     {
+        this.preload_base()        
         this.load.image('mech', 'assets/pics/titan-mech.png');
     },
 
@@ -490,7 +631,7 @@ var SceneG = new Phaser.Class({
     {
         this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
         
-
+        this.create_base()
         if (DEBUG_MODE ==true) {
 
             this.add.text(32, 32, 'Scene G - Wendy has a boss fight with the imp', { fill: 'white' });
@@ -502,6 +643,11 @@ var SceneG = new Phaser.Class({
             this.scene.start('sceneH');
 
         }, this);
+    },
+
+    update: function (time, delta)
+    {
+        this.update_base()
     }
 
 });
@@ -513,8 +659,8 @@ var SceneG = new Phaser.Class({
 
 var SceneH = new Phaser.Class({
 
-    Extends: Phaser.Scene,
-
+    //Extends: Phaser.Scene,
+    Extends: SceneBaseClass,
     initialize:
 
     function SceneH ()
@@ -524,13 +670,14 @@ var SceneH = new Phaser.Class({
 
     preload: function ()
     {
+        this.preload_base()        
         this.load.image('mech', 'assets/pics/titan-mech.png');
     },
 
     create: function ()
     {
         this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
-        
+        this.create_base()
 
         if (DEBUG_MODE ==true) {
 
@@ -543,6 +690,11 @@ var SceneH = new Phaser.Class({
             this.scene.start('sceneI');
 
         }, this);
+    },
+
+    update: function (time, delta)
+    {
+        this.update_base()
     }
 
 });
@@ -554,8 +706,8 @@ var SceneH = new Phaser.Class({
 
 var SceneI = new Phaser.Class({
 
-    Extends: Phaser.Scene,
-
+    //Extends: Phaser.Scene,
+    Extends: SceneBaseClass,
     initialize:
 
     function SceneH ()
@@ -565,12 +717,14 @@ var SceneI = new Phaser.Class({
 
     preload: function ()
     {
+        this.preload_base()        
         this.load.image('mech', 'assets/pics/titan-mech.png');
     },
 
     create: function ()
     {
         this.add.sprite(Phaser.Math.Between(0, 800), 300, 'mech');
+        this.create_base()
         
 
         if (DEBUG_MODE ==true) {
@@ -584,6 +738,11 @@ var SceneI = new Phaser.Class({
             this.scene.start('sceneA');
 
         }, this);
+    },
+
+    update: function (time, delta)
+    {
+        this.update_base()
     }
 
 });
