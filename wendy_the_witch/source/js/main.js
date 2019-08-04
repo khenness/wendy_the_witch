@@ -1,5 +1,7 @@
 var DEBUG_MODE = true;
 
+var ENABLE_MUSIC = false;
+
 var map;
 var player;
 var cursors;
@@ -228,9 +230,12 @@ var SceneA = new Phaser.Class({
         
         music = this.sound.add('gribblewood');
 
-        music.play({
-            loop: true
-        });
+
+        if (ENABLE_MUSIC == true) {
+            music.play({
+                loop: true
+            });
+        }
 
 
 
@@ -287,10 +292,12 @@ var SceneB = new Phaser.Class({
         
         music = this.sound.add('home_light');
 
-        music.play({
-            loop: true
-        });
 
+        if (ENABLE_MUSIC == true) {
+            music.play({
+                loop: true
+            });
+        }
 
 
         this.input.once('pointerdown', function (event) {
@@ -341,9 +348,11 @@ var SceneC = new Phaser.Class({
         }
         this.add.text(32, 524, 'Wendys house', { fill: 'white' });
         music = this.sound.add('home_dark');
-        music.play({
-            loop: true
-        });
+        if (ENABLE_MUSIC == true) {
+            music.play({
+                loop: true
+            });
+        }
         this.input.once('pointerdown', function (event) {
 
             //console.log('From SceneC to SceneA');
@@ -395,9 +404,11 @@ var SceneD = new Phaser.Class({
         this.add.text(32, 524, 'The Gribblewood', { fill: 'white' });
 
         music = this.sound.add('streets');
-        music.play({
-            loop: true
-        });
+        if (ENABLE_MUSIC == true) {
+            music.play({
+                loop: true
+            });
+        }
 
         this.input.once('pointerdown', function (event) {
 
@@ -453,9 +464,11 @@ var SceneE = new Phaser.Class({
         }
         this.add.text(32, 524, 'The Gribblewood', { fill: 'white' });
         music = this.sound.add('gribblewood');
-        music.play({
-            loop: true
-        });
+        if (ENABLE_MUSIC == true) {
+            music.play({
+                loop: true
+            });
+        }
 
 
         this.input.once('pointerdown', function (event) {
