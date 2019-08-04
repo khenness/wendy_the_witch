@@ -13,6 +13,14 @@ var score = 0;
 
 
 // this function will be called when the player touches a coin
+function kevin_test(sprite, tile) {
+    //this.add.text(100, 396, 'Reached kevin_test_1', { fill: 'white' });
+    console.log('got to kevin_test');
+    return false;
+}
+
+
+// this function will be called when the player touches a coin
 function collectCoin(sprite, tile) {
     coinLayer.removeTileAt(tile.x, tile.y); // remove the tile/coin
     score++; // add 10 points to the score
@@ -32,6 +40,13 @@ var scene_1_Dialogue_1 = [
 {"char": "Wendy", "text": "Goodnight Pookii."},
 {"char": "Wendy", "text": "*Meow*"}]
 
+
+
+
+function handler (x, y)
+{
+    this.add.image(x, y, 'plush');
+}
 
 
 var SceneBaseClass = new Phaser.Class({
@@ -58,7 +73,8 @@ var SceneBaseClass = new Phaser.Class({
         loading_text = this.add.text(100, 300, 'Loading....', { fill: 'white' });
 
         // TODO: Add Portrait Sprite Loading in here
-        
+        this.load.image('plush', 'assets/pics/profil-sad-plush.png');
+
 
         // map made with Tiled in JSON format
         this.load.tilemapTiledJSON('map', 'assets/map.json');
@@ -66,6 +82,7 @@ var SceneBaseClass = new Phaser.Class({
         this.load.spritesheet('tiles', 'assets/tiles.png', {frameWidth: 70, frameHeight: 70});
         // simple coin image
         this.load.image('coin', 'assets/coinGold.png');
+
         // player animations
         this.load.atlas('player', 'assets/player_old.png', 'assets/player.json');
 
@@ -75,6 +92,21 @@ var SceneBaseClass = new Phaser.Class({
     {
     //blank
         loading_text.destroy()
+
+
+        
+
+        //event test
+        this.events.on('addImage', handler, this);
+
+        //  The handler function will be sent 2 arguments: x and y
+
+        this.events.emit('addImage', 200, 300);
+        this.events.emit('addImage', 400, 300);
+        this.events.emit('addImage', 600, 300);
+
+
+
 
         if (DEBUG_MODE ==true) {
             this.add.text(100, 332, 'called create_base', { fill: 'white' });
@@ -110,6 +142,7 @@ var SceneBaseClass = new Phaser.Class({
         
         // player will collide with the level tiles 
         this.physics.add.collider(groundLayer, player);
+
 
         coinLayer.setTileIndexCallback(17, collectCoin, this);
         // when the player overlaps with a tile with index 17, collectCoin 
@@ -181,6 +214,7 @@ var SceneBaseClass = new Phaser.Class({
         }
 
     },
+
 
 });
 
