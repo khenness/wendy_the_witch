@@ -8,6 +8,8 @@ var text;
 var score = 0;
 
 
+
+
 // this function will be called when the player touches a coin
 function collectCoin(sprite, tile) {
     coinLayer.removeTileAt(tile.x, tile.y); // remove the tile/coin
@@ -18,11 +20,27 @@ function collectCoin(sprite, tile) {
 
 
 
+
+
+var scene_1_Dialogue_1 = [
+{"char": "Wendy", "text": "It’s so cozy and warm."},
+{"char": "Wendy", "text": "*Yawns*"},
+{"char": "Wendy", "text": "Goodnight Teddy."},
+{"char": "Teddy", "text":"…"},
+{"char": "Wendy", "text": "Goodnight Pookii."},
+{"char": "Wendy", "text": "*Meow*"}]
+
+
+
 var SceneBaseClass = new Phaser.Class({
 
     Extends: Phaser.Scene,
 
     initialize:
+
+
+
+
 
     function SceneBaseClass ()
     {
@@ -32,9 +50,13 @@ var SceneBaseClass = new Phaser.Class({
     preload_base: function ()
     {
     //blank
-        if (DEBUG_MODE ==true) {
-            this.add.text(100, 300, 'called preload_base', { fill: 'white' });
-        }
+        //if (DEBUG_MODE ==true) {
+            //this.add.text(100, 300, 'called preload_base', { fill: 'white' });
+        //}
+        loading_text = this.add.text(100, 300, 'Loading....', { fill: 'white' });
+
+        // TODO: Add Portrait Sprite Loading in here
+        
 
         // map made with Tiled in JSON format
         this.load.tilemapTiledJSON('map', 'assets/map.json');
@@ -50,6 +72,8 @@ var SceneBaseClass = new Phaser.Class({
     create_base: function ()
     {
     //blank
+        loading_text.destroy()
+
         if (DEBUG_MODE ==true) {
             this.add.text(100, 332, 'called create_base', { fill: 'white' });
         }
