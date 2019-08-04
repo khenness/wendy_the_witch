@@ -9,8 +9,18 @@ var groundLayer, coinLayer;
 var text;
 var score = 0;
 
+
+
+scene_index = 1
 var myText;
 
+function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}
 
 
 // this function will be called when the player touches a coin
@@ -86,6 +96,7 @@ var SceneBaseClass = new Phaser.Class({
     },
         
 
+
     show_cutscene_speech: function(person, text){
         console.log("Got to show_cutscene_speech person is "+ person+ " and text is "+ text)   
 
@@ -109,8 +120,17 @@ var SceneBaseClass = new Phaser.Class({
     },
 
     cutscene_press_any_key_to_continue: function(){
+        
+        this.input.on('pointerdown', function () {
+
+            console.log('Player clicked the mouse');
+            scene_index++;
+            
+
+        }, this);
 
 
+        //wait(10000)
         console.log("Got to cutscene_press_any_key_to_continue")   
 
 
@@ -132,7 +152,7 @@ var SceneBaseClass = new Phaser.Class({
 
         this.show_cutscene_speech("WENDY", "Hi I am Wendy")
         this.cutscene_press_any_key_to_continue()
-        //this.show_cutscene_speech("Teddy", "Hi Wendy I am Teddy")
+        this.show_cutscene_speech("Teddy", "Hi Wendy I am Teddy")
         this.cutscene_press_any_key_to_continue()
         this.finish_cutscene()
 
@@ -146,7 +166,6 @@ var SceneBaseClass = new Phaser.Class({
 
 
         
-
 
 
 
@@ -380,7 +399,7 @@ var SceneB = new Phaser.Class({
             });
         }
 
-        this.play_cutscene_scene_1_Dialogue_1()
+
         this.input.once('pointerdown', function (event) {
 
             console.log('From SceneB to SceneC');
@@ -388,12 +407,17 @@ var SceneB = new Phaser.Class({
             this.scene.start('sceneC');
 
         }, this);
+
+
     },
 
     update: function (time, delta)
     {
         //this.arrow.rotation += 0.01;
         //this.update_base()
+
+        //this.play_cutscene_scene_1_Dialogue_1()
+        this.play_cutscene_scene_1_Dialogue_1()
     }
 
 });
