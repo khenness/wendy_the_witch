@@ -921,7 +921,52 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 1727209852}
+      objectReference: {fileID: 1727209857}
+    - target: {fileID: 114120959967038688, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1306269782}
+    - target: {fileID: 114017239165196512, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1306269782}
+    - target: {fileID: 114146265053664486, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1306269782}
+    - target: {fileID: 114011155495288680, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 754235335}
+    - target: {fileID: 114675729509133170, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1306269782}
+    - target: {fileID: 114659384222114612, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 530438079}
+    - target: {fileID: 114120959967038688, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: storyText
+      value: "Kevin test It\u2019s so cozy and warm.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114367381544801644, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: storyText
+      value: Kevin test Who opened the Window?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114367381544801644, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1306269782}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bd347c86ad129c43a15d2152a6bb0f2, type: 2}
   m_IsPrefabAsset: 0
@@ -952,7 +997,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1727209843}
   selectedCommands:
-  - {fileID: 1727209850}
+  - {fileID: 1727209849}
   variables: []
   description: 
   stepPause: 0
@@ -1395,9 +1440,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  storyText: Who opened the Window?
+  storyText: Kevin test Who opened the Window?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1306269782}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1482,7 +1527,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '*Meow*'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 530438079}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1509,7 +1554,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Goodnight Pookii.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1306269782}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1536,7 +1581,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '...'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 754235335}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1563,7 +1608,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Goodnight Teddy.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1306269782}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1590,7 +1635,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '*Yawns*'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1306269782}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1615,9 +1660,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: "It\u2019s so cozy and warm.\r\n"
+  storyText: "Kevin test It\u2019s so cozy and warm.\r\n"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1306269782}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
