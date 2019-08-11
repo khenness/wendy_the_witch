@@ -626,14 +626,14 @@
      <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\inspect.txt" />
      <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\fungus.txt" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/kevin/Desktop/wendy_the_witch/Wendle_Pendlewick/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/kevin/Desktop/wendy_the_witch/Wendle_Pendlewick/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/kevin/Desktop/wendy_the_witch/Wendle_Pendlewick/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>C:/Users/kevin/Desktop/wendy_the_witch/Wendle_Pendlewick/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/kevin/Desktop/wendy_the_witch/Wendle_Pendlewick/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
