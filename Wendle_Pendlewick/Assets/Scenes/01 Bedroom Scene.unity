@@ -970,7 +970,7 @@ Prefab:
     - target: {fileID: 114057904563604352, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
         type: 2}
       propertyPath: storyText
-      value: '...Kevin tyest'
+      value: '...'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bd347c86ad129c43a15d2152a6bb0f2, type: 2}
@@ -1418,7 +1418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  storyText: '...Kevin tyest'
+  storyText: '...'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
