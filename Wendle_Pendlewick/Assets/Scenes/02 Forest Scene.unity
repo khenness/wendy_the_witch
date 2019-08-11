@@ -771,7 +771,7 @@ Prefab:
     - target: {fileID: 114008464243857180, guid: 1ace5ec135409aa47a9c3dda294af20d,
         type: 2}
       propertyPath: selectedBlocks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4156801257995288, guid: 1ace5ec135409aa47a9c3dda294af20d, type: 2}
       propertyPath: m_LocalPosition.x

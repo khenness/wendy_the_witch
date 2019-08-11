@@ -372,8 +372,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Character Name
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameText: Teddy
+  nameColor: {r: 0.5471698, g: 0.48264506, b: 0.48264506, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
@@ -847,8 +847,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Character Name
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameText: Wendy Pendlewick
+  nameColor: {r: 0.9716981, g: 0, b: 0.7656023, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
@@ -875,6 +875,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114597934102570870, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: selectedBlocks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114597934102570870, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
         type: 2}
       propertyPath: selectedCommands.Array.size
@@ -916,12 +921,67 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 1727209843}
+      objectReference: {fileID: 1727209917}
     - target: {fileID: 114597934102570870, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 1727209852}
+      objectReference: {fileID: 1727209847}
+    - target: {fileID: 114559057908020430, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: nodeRect.x
+      value: -262.0055
+      objectReference: {fileID: 0}
+    - target: {fileID: 114367381544801644, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1306269782}
+    - target: {fileID: 114057904563604352, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 754235335}
+    - target: {fileID: 114650198743246104, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1306269782}
+    - target: {fileID: 114102682632194606, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1306269782}
+    - target: {fileID: 114301704894744142, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1306269782}
+    - target: {fileID: 114756606170930518, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1306269782}
+    - target: {fileID: 114875233455977556, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1306269782}
+    - target: {fileID: 114331911409487002, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1306269782}
+    - target: {fileID: 114956904736754310, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 754235335}
+    - target: {fileID: 114381659647428360, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1306269782}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bd347c86ad129c43a15d2152a6bb0f2, type: 2}
   m_IsPrefabAsset: 0
@@ -950,9 +1010,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1727209843}
+  - {fileID: 1727209917}
   selectedCommands:
-  - {fileID: 1727209850}
+  - {fileID: 1727209914}
   variables: []
   description: 
   stepPause: 0
@@ -1262,7 +1322,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Come on Teddy. We have to go find Pookii.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1306269782}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1289,7 +1349,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Oh no, he must have run away again!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1306269782}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1316,7 +1376,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Pookii? Pookii?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1306269782}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1343,7 +1403,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "Oh, I know you didn\u2019t Teddy. It must have been Pookii."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1306269782}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1370,7 +1430,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '...'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 754235335}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1397,7 +1457,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Who opened the Window?
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1306269782}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1424,7 +1484,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 'Wh-what? Why is it so cold? '
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1306269782}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1449,7 +1509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -264.5371
+    x: -262.0055
     y: 94.90479
     width: 184.17717
     height: 40
@@ -3187,7 +3247,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: That's right. Let's go find Pookii!
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1306269782}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3214,7 +3274,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '...'
   description: 
-  character: {fileID: 0}
+  character: {fileID: 754235335}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -3242,7 +3302,7 @@ MonoBehaviour:
   storyText: "I would never forget you Teddy. I know I\u2019ll always be safe with
     you by my side!\r\n"
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1306269782}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
