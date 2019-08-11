@@ -967,6 +967,11 @@ Prefab:
       propertyPath: character
       value: 
       objectReference: {fileID: 1306269782}
+    - target: {fileID: 114057904563604352, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
+        type: 2}
+      propertyPath: storyText
+      value: '...Kevin tyest'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bd347c86ad129c43a15d2152a6bb0f2, type: 2}
   m_IsPrefabAsset: 0
@@ -997,7 +1002,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1727209843}
   selectedCommands:
-  - {fileID: 1727209849}
+  - {fileID: 1727209848}
   variables: []
   description: 
   stepPause: 0
@@ -1413,7 +1418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 10
   indentLevel: 0
-  storyText: '...'
+  storyText: '...Kevin tyest'
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
