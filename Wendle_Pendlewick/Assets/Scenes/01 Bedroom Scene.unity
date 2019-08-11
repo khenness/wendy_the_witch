@@ -960,7 +960,7 @@ Prefab:
     - target: {fileID: 114367381544801644, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
         type: 2}
       propertyPath: storyText
-      value: Kevin test Who opened the Window?
+      value: Who opened the Window?
       objectReference: {fileID: 0}
     - target: {fileID: 114367381544801644, guid: 1bd347c86ad129c43a15d2152a6bb0f2,
         type: 2}
@@ -1440,7 +1440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 9
   indentLevel: 0
-  storyText: Kevin test Who opened the Window?
+  storyText: Who opened the Window?
   description: 
   character: {fileID: 1306269782}
   portrait: {fileID: 0}
