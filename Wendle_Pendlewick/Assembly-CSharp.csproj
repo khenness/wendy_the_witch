@@ -626,14 +626,14 @@
      <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\inspect.txt" />
      <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\fungus.txt" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/kevin/Unity Projects/wendy_the_witch/Wendle_Pendlewick/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/kevin/Unity Projects/wendy_the_witch/Wendle_Pendlewick/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/kevin/Unity Projects/wendy_the_witch/Wendle_Pendlewick/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>C:/Users/kevin/Unity Projects/wendy_the_witch/Wendle_Pendlewick/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/kevin/Unity Projects/wendy_the_witch/Wendle_Pendlewick/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
@@ -817,9 +817,6 @@
  </Reference>
  <Reference Include="Unity.Locator">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/Managed/Unity.Locator.dll</HintPath>
- </Reference>
- <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/kevin/Unity Projects/wendy_the_witch/Wendle_Pendlewick/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.21f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
